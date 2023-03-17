@@ -1,0 +1,10 @@
+<div class="container text-center">
+    <div class="row">
+      <div class="col col-lg-4" *ngFor="let item of whitechocolate">
+    <div class="card" style="width: 18rem; margin-top: 20px;" >
+    <img src="{{item.images}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <a (click)="gotoHere(item.click)" class="btn btn-outline-dark">buy</a>
+    </div>
+  </div>
