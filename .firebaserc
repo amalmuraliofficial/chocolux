@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chocolux-bc239": {
+      "hosting": {
+        "ChocoLux": [
+          "chocolux-bc239"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chocolux-bc239"
+  }
+}

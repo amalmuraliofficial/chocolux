@@ -10,8 +10,11 @@ import { FooterComponent } from './utils/footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { CarouselComponent } from './utils/carousel/carousel.component';
 import { SingleComponent } from './single/single.component';
-import { SinglepageComponent } from './singlepage/singlepage.component';
-import { BuyComponent } from './buy/buy.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { CollectionComponent } from './collection/collection.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +27,14 @@ import { BuyComponent } from './buy/buy.component';
     ContactComponent,
     CarouselComponent,
     SingleComponent,
-    SinglepageComponent,
-    BuyComponent
+    CollectionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore())
   ],
   providers: [],
   bootstrap: [AppComponent]

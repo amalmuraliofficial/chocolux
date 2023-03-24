@@ -1,124 +1,532 @@
-export const homedatabase=
+/*export const home=
 [
     {
         "id":"1",
         "name":"WHITE CHOCOLATE",
-        "images":"https://www.confectionerynews.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/confectionerynews.com/news/r-d/cargill-s-new-bright-white-chocolate-dazzles-in-the-age-of-social-media/13017212-1-eng-GB/Cargill-s-new-Bright-White-chocolate-dazzles-in-the-age-of-social-media.jpg",
-        "click":"VIEW PRODUCTS"
+        "images":"https://www.confectionerynews.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/confectionerynews.com/news/r-d/cargill-s-new-bright-white-chocolate-dazzles-in-the-age-of-social-media/13017212-1-eng-GB/Cargill-s-new-Bright-White-chocolate-dazzles-in-the-age-of-social-media.jpg"
         
     },
     {
         "id":"2",
         "name":"DARK CHOCOLATE",
-        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/04_bb_863758_k_-_Copy_1600x.jpg?v=1624519761",
-        "click":"VIEW PRODUCTS"
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/04_bb_863758_k_-_Copy_1600x.jpg?v=1624519761"
     },
     {
         "id":"3",
         "name":"PURE CHOCOLATE",
-        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/Desktop_-_category_page_banner_Pure_800x.jpg?v=1600356414",
-        "click":"VIEW PRODUCTS"
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/Desktop_-_category_page_banner_Pure_800x.jpg?v=1600356414"
     },
     {
         "id":"4",
         "name":"VALENTINES DAY",
-        "images":"https://www.gifts-to-india.com/blog/images/39202162134832.jpg",
-        "click":"VIEW PRODUCTS"
+        "images":"https://www.gifts-to-india.com/blog/images/39202162134832.jpg"
     },
     {
         "id":"5",
         "name":"ANNIVERSARY DAY",
-        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/V_Day_Category_Banner_750x750.jpg?v=1654338170",
-        "click":"VIEW PRODUCTS"
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/V_Day_Category_Banner_750x750.jpg?v=1654338170"
     },
     {
         "id":"6",
         "name":"CHRISTMAS COLLECTION",
-        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/heart_banner_800x.png?v=1674218092",
-        "click":"VIEW PRODUCTS"
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/heart_banner_800x.png?v=1674218092"
     },
     {
         "id":"7",
         "name":"BERRY CHOCOLATE",
-        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/Desktop_-_category_page_banner_Potato_chips_copy_800x.jpg?v=1600056404",
-        "click":"VIEW PRODUCTS"
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/Desktop_-_category_page_banner_Potato_chips_copy_800x.jpg?v=1600056404"
     }
     ,
     {
         "id":"8",
         "name":"CHOCOLUX SPECIALS",
-        "images":"data:image/jpeg;base64,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",
+        "images":"",
         "click":"VIEW PRODUCTS"
     },
     {
         "id":"9",
         "name":"GIFT COLLECTIONS",
-        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/holi_category_banner_800x.jpg?v=1646887959",
-        "click":"VIEW PRODUCTS"
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/holi_category_banner_800x.jpg?v=1646887959"
     }
 
 ]
-export const whitechocolate=
+export const wc=
 [
     
     {
-        "id":10,
+        "id":"10",
         "name":"new1",
         "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/Yours_Truly_MadlyGiftBasket_d9f5ef7e-036e-410a-ace8-7592bb877986_1000x.png?v=1676525523",
-        "click":"BUY1"
+        "price":"200"
     },
     {
-        "id":11,
+        "id":"11",
         "name":"new2",
         "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/PetiteTruffePralineChocolate_600x.jpg?v=1620901988",
-        "click":"BUY1"
+        "price":"200"
     },
     {
-        "id":12,
+        "id":"12",
         "name":"new3",
         "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/Yours_Truly_MadlyGiftBasket_d9f5ef7e-036e-410a-ace8-7592bb877986_1000x.png?v=1676525523",
-        "click":"BUY1"
+        "price":"200"
     }
-]
-export const darkchocolate=
+] 
+  
+export const dc=
 [
     {
-        "id":"",
-        "name":"",
-        "images":"",
-        "click":""
+        "id":"13",
+        "name":"dc1",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
     },
     {
-        "id":"",
-        "name":"",
-        "images":"",
-        "click":""
+        "id":"14",
+        "name":"dc2",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184","price":"200"
     },
     {
-        "id":"",
-        "name":"",
-        "images":"",
-        "click":""
+        "id":"15",
+        "name":"dc3",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
     }
 ]
-export const purechocolate=
+export const pc=
 [
     {
-        "id":"",
-        "name":"",
-        "images":"",
-        "click":""
+        "id":"16",
+        "name":"pc1",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
     },
     {
-        "id":"",
-        "name":"",
-        "images":"",
-        "click":""
+        "id":"17",
+        "name":"pc2",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
     },
     {
-        "id":"",
-        "name":"",
-        "images":"",
-        "click":""
+        "id":"18",
+        "name":"pc3",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
     }
 ]
+export const vd=
+[
+    {
+        "id":"19",
+        "name":"pc1",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    },
+    {
+        "id":"20",
+        "name":"pc2",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    },
+    {
+        "id":"21",
+        "name":"pc3",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    }
+]
+export const ad=
+[
+    {
+        "id":"22",
+        "name":"pc1",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    },
+    {
+        "id":"23",
+        "name":"pc2",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    },
+    {
+        "id":"24",
+        "name":"pc3",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    }
+]
+export const cc=
+[
+    {
+        "id":"25",
+        "name":"pc1",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    },
+    {
+        "id":"26",
+        "name":"pc2",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    },
+    {
+        "id":"27",
+        "name":"pc3",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    }
+]
+export const bc=
+[
+    {
+        "id":"28",
+        "name":"pc1",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    },
+    {
+        "id":"29",
+        "name":"pc2",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    },
+    {
+        "id":"30",
+        "name":"pc3",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    }
+]
+export const cs=
+[
+    {
+        "id":"31",
+        "name":"pc1",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    },
+    {
+        "id":"32",
+        "name":"pc2",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    },
+    {
+        "id":"33",
+        "name":"pc3",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    }
+]
+export const gc=
+[
+    {
+        "id":"34",
+        "name":"pc1",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    },
+    {
+        "id":"35",
+        "name":"pc2",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    },
+    {
+        "id":"36",
+        "name":"pc3",
+        "images":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaHazelnut_600x.jpg?v=1675425184",
+        "price":"200"
+    }
+]*/
+export const data=[
+    {
+        "id":"1",
+        "img":"https://www.confectionerynews.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/confectionerynews.com/news/r-d/cargill-s-new-bright-white-chocolate-dazzles-in-the-age-of-social-media/13017212-1-eng-GB/Cargill-s-new-Bright-White-chocolate-dazzles-in-the-age-of-social-media.jpg",
+        "title":"WHITE CHOCOLATE",
+        "button":"View More"
+        
+    },
+    {
+        "id":"2",
+         "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/04_bb_863758_k_-_Copy_1600x.jpg?v=1624519761",
+        "title":"DARK CHOCOLATE",
+        "button":"View More",
+        
+    },  
+    {
+        "id":"3",
+        "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/Desktop_-_category_page_banner_Pure_800x.jpg?v=1600356414",
+       "title":"PURE CHOCOLATE",
+       "button":"View More",
+       
+   },  
+   {
+    "id":"4",
+    "img":"https://www.gifts-to-india.com/blog/images/39202162134832.jpg",
+   "title":"VALENTINES DAY",
+   "button":"View More",
+   
+   },
+   {
+    "id":"5",
+    "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/V_Day_Category_Banner_750x750.jpg?v=1654338170",
+   "title":"ANNIVERSARY DAY",
+   "button":"View More",
+   
+   }, 
+   {
+    "id":"6",
+    "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/heart_banner_800x.png?v=1674218092",
+   "title":"CHRISTMAS COLLECTION",
+   "button":"View More",
+   
+   },
+   {
+    "id":"7",
+    "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/Desktop_-_category_page_banner_Potato_chips_copy_800x.jpg?v=1600056404",
+   "title":"BERRY CHOCOLATE",
+   "button":"View More",
+   
+   }, 
+   {
+    "id":"8",
+    "img":"https://lmg-labmanager.s3.amazonaws.com/assets/articleNo/21723/aImg/39588/assorted-chocolates-l.png",
+   "title":"CHOCOLUX SPECIALS",
+   "button":"View More",
+   
+   },
+   {
+    "id":"9",
+    "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/collections/holi_category_banner_800x.jpg?v=1646887959",
+   "title":"GIFT COLLECTIONS",
+   "button":"View More",
+   
+   },                     
+]
+export const hammer=[
+    {
+        "id":"10",
+        "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/Yours_Truly_MadlyGiftBasket_d9f5ef7e-036e-410a-ace8-7592bb877986_600x.png?v=1676525523",
+        "title":"milky bar",
+        "price":"1200"
+        
+    },
+    {
+        "id":"11",
+        "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/AmandeMilkchocolate_600x.jpg?v=1620901307",
+        "title":"peppermint crunch",
+        "price":"2200"
+        
+    },
+    {
+        "id":"12",
+        "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/PureCreamyMilk_WhiteChocolate_600x.jpg?v=1622624783",
+        "title":"Electric Hammer",
+        "price":"1600"
+        
+    },]
+    export const ladder =[
+        {
+            "id":"13",
+            "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/CoffeeChocolate2_600x.jpg?v=1620904167",
+            "title":"amul dark",
+            "price":"2060"
+        
+        },
+        {
+            "id":"14",
+            "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/PureChocolateColombiaMilk2_1_600x.jpg?v=1622624674",
+            "title":"morde dark",
+            "price":"2070"
+        
+        },
+        {
+            "id":"15",
+            "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaEcuadorSweetChocolate_600x.jpg?v=1676435048",
+            "title":"multiway ladders",
+            "price":"1200"
+        
+        },]
+        export const spade =[
+            {
+                "id":"16",
+                "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/WaferTiramisu_600x.jpg?v=1674125246",
+                "title":"standard spade",
+                "price":"2300"
+        
+            },
+            {
+                "id":"17",
+                "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/WaferStrawberry_600x.jpg?v=1674129352",
+                "title":"border spade",
+                "price":"2500"
+        
+            },
+            {   
+                    "id":"18",
+                    "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/ChocolateWafersHazel1_600x.jpg?v=1622177794",
+                    "title":"digging spade",
+                    "price":"2020"
+        
+             }, ]
+             export const chisel =[
+                {
+                    "id":"19",
+                    "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/89_d91f7d6b-a93a-46ed-93e7-36c3c9b7076e_600x.jpg?v=1677133702",
+                    "title":"flat chisel",
+                    "price":"200"
+        
+                },
+                {
+                    "id":"20",
+                    "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/BetterTogether_600x.jpg?v=1654415990",
+                    "title":"cross cut chisel",
+                    "price":"200"
+        
+                },
+                {
+                    "id":"21",
+                    "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/ForMyForeverGiftTray_600x.png?v=1673931448",
+                    "title":"side cut chisel",
+                    "price":"200"
+        
+                },]
+                export const Trowel =[
+                    {
+                        "id":"22",
+                        "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/PrafeuilleChocoalteBerryCube_600x.jpg?v=1675680477",
+                        "title":"brick trowel",
+                        "price":"200"
+        
+                    },
+                    {
+                        "id":"23",
+                        "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/PrafeuilleCaramel2_600x.jpg?v=1622179379",
+                        "title":"steel trowel",
+                        "price":"200"
+        
+                    },
+                    {
+                        "id":"24",
+                        "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/PopcornChocolate_600x.jpg?v=1676526817",
+                        "title":"hand trowel",
+                        "price":"200"
+        
+                    },]
+                    export const Circularsaw =[
+                        {
+                            "id":"25",
+                        "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/PureCaramelMilkChocolate_600x.jpg?v=1622624498",
+                        "title":"Abrasive saw",
+                        "price":"200"
+        
+
+                        },
+                        {
+                            "id":"26",
+                        "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/BatonCookiesCoconut_600x.jpg?v=1674127017",
+                        "title":"Carbide saw",
+                        "price":"200"
+        
+
+                        },
+                        {
+                            "id":"27",
+                        "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/BatonCookiesHazelCacao_600x.jpg?v=1674127037",
+                        "title":"Concrete saw",
+                        "price":"200"
+        
+
+                        },]
+                        export const Drillmachine =[
+                            {
+                                "id":"28",
+                            "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/WaferTiramisu_600x.jpg?v=1674125246",
+                            "title":"Portable Drilling Machine",
+                            "price":"200"
+        
+    
+                            },
+                            {
+                                "id":"29",
+                            "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/ChocolateWafersHazel1_600x.jpg?v=1622177794",
+                            "title":"Radial Drilling Machine",
+                            "price":"200"
+        
+    
+                            },
+                            {
+                                "id":"30",
+                            "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/WaferStrawberry_600x.jpg?v=1674129352",
+                            "title":"Gang Drilling Machine",
+                            "price":"200"
+        
+    
+                            },]
+                            export const Wheelbarrow =[
+                                {
+                                    "id":"31",
+                                "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/MacadamiaChocolate_600x.jpg?v=1676526901",
+                                "title":"Stainless Steel Wheelbarrow",
+                                "price":"200"
+                                        
+        
+                                },
+                                {
+                                    "id":"32",
+                                "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NuttyBarChocolate_600x.jpg?v=1676435175",
+                                "title":"Galvanized Steel Wheelbarrows",
+                                "price":"200"
+        
+        
+                                },
+                                {
+                                    "id":"33",
+                                "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaMildWhiteChocolate_600x.jpg?v=1676549455",
+                                "title":" Powder Coated Steel Wheelbarrows",
+                                "price":"200"
+        
+        
+                                },]
+                                export const  Handsaw =[
+                                    {
+                                        "id":"34",
+                                    "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/CompanyforherCuppa_600x.jpg?v=1677064017",
+                                    "title":"Hack Saw",
+                                    "price":"200"
+        
+                                    
+            
+                                    },
+                                    {
+                                        "id":"35",
+                                    "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/PureLoveGiftBox_600x.png?v=1676525291",
+                                    "title":"Coping Saw",
+                                    "price":"200"
+        
+        
+            
+                                    },
+                                    {
+                                        "id":"36",
+                                    "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/OneofaKind_600x.jpg?v=1654416240",
+                                    "title":"Crosscut Saw",
+                                    "price":"200"
+        
+                                    
+            
+                                    },
+                    
+                    
+                        
+                        
+                            
+                            
+            
+            
+
+        ]
+
+

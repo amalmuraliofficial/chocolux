@@ -7,16 +7,23 @@ import { HeroService } from '../hero.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent {/*
 
   constructor(private n:HeroService,private router:Router){
 
   }
 
-    homedatabase=this.n.getData();
+    home=this.n.getData();
     gotoHere(id:any){
       localStorage.setItem('id',id)
       this.router.navigate(['/single'])
 
-    }
+    }*/
+    
+ constructor(private hero : HeroService, private router: Router){}
+ data=this.hero.giveData();
+ gotoHere(id:string){
+  localStorage.setItem('title',id)
+  this.router.navigate(['/single'])
+}
 }

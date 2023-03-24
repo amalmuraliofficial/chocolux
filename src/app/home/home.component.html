@@ -1,7 +1,7 @@
-<app-carousel></app-carousel>
+<!--app-carousel></app-carousel>
 <div class="container mt-5">
     <div class="row">
-        <div class="col" *ngFor="let chocolux of homedatabase">
+        <div class="col" *ngFor="let chocolux of home">
           <div class="container text-center" >
            <div class="card" style="width: 18rem;">
             <img src="{{chocolux.images}}" class="card-img-top" alt="...">
@@ -12,4 +12,78 @@
           </div>
        </div>
    </div>
-</div>
+</div-->
+<!-- Background image -->
+<header>
+  <div
+  class="p-5 text-center bg-image"
+  style="
+    background-image: url('https://cdn.shopify.com/s/files/1/0420/8669/5079/files/Desktop_HOMEPAGE_BANNER_-_1800X800_44b9fcc9-60f7-47bc-8c51-c93cacde264b_1800x.jpg?v=1677053592');
+    height: 1000px;
+  "
+  >
+  <div class="d-flex" style="margin-left:900px;
+  margin-top: 150px;
+  ">
+  
+      <div class="text-white">
+        <h1 class="mb-3" id="nav">CHOCOLUX </h1>
+        <h5 class="mb-4" id="h5"></h5>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Background image -->
+  </header>
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about section-bg">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-title">
+        
+        <h3 id="a1">Find Out More <span>About Us</span></h3>
+        
+      </div>
+  
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+          <img src="https://cdn.shopify.com/s/files/1/0420/8669/5079/files/Desktop_HOMEPAGE_BANNER_-_1800X800_44b9fcc9-60f7-47bc-8c51-c93cacde264b_1800x.jpg?v=1677053592" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <h3>Celebrate Love with luxury chocolates!</h3>
+          <p class="fst-italic">
+            Nice memories are like chocolate: you can't survive on them alone, as they aren't very filling, but they make life sweeter. And, you always crave for a little more.
+          </p>
+          <ul>
+            <li>
+              <i class="bx bx-store-alt"></i>
+              <div>
+                <h5>The Ultimate Chocolate Gifting Guide</h5>
+                <p>Chocolate has been given as a gift, particularly of affection and passion for ages.</p>
+              </div>
+            </li>
+            <li>
+              <i class="bx bx-images"></i>
+              <div>
+                <h5>Good, Better, Best or Impeccable</h5>
+                <p>Creating good quality chocolate is complex and multifaceted. The quality of chocolate is determined by the ingredients used, how it is manufactured and processed, what the packaging is – every minute detail matters.</p>
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+  
+    </div>
+  </section><!-- End About Section -->
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col col-lg-4" *ngFor="let item of data">
+  <div class="card" style="width: 18rem; margin-top: 20px;" >
+    <img src="{{item.img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{item.title}}</h5>
+      <a (click)="gotoHere(item.title)" class="btn btn-outline-dark">{{item.button}}</a>
+    </div>
+  </div>
