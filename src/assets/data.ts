@@ -323,7 +323,7 @@ export const hammer=[
     {
         "id":"12",
         "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/PureCreamyMilk_WhiteChocolate_600x.jpg?v=1622624783",
-        "title":"Electric Hammer",
+        "title":"morde white",
         "price":"1600"
         
     },]
@@ -345,7 +345,7 @@ export const hammer=[
         {
             "id":"15",
             "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaEcuadorSweetChocolate_600x.jpg?v=1676435048",
-            "title":"multiway ladders",
+            "title":"multiway dark",
             "price":"1200"
         
         },]
@@ -353,21 +353,21 @@ export const hammer=[
             {
                 "id":"16",
                 "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/WaferTiramisu_600x.jpg?v=1674125246",
-                "title":"standard spade",
+                "title":"cadbury ",
                 "price":"2300"
         
             },
             {
                 "id":"17",
                 "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/WaferStrawberry_600x.jpg?v=1674129352",
-                "title":"border spade",
+                "title":"cocoa ",
                 "price":"2500"
         
             },
             {   
                     "id":"18",
                     "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/ChocolateWafersHazel1_600x.jpg?v=1622177794",
-                    "title":"digging spade",
+                    "title":"belgian",
                     "price":"2020"
         
              }, ]
@@ -375,21 +375,21 @@ export const hammer=[
                 {
                     "id":"19",
                     "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/89_d91f7d6b-a93a-46ed-93e7-36c3c9b7076e_600x.jpg?v=1677133702",
-                    "title":"flat chisel",
-                    "price":"200"
+                    "title":"didier",
+                    "price":"2600"
         
                 },
                 {
                     "id":"20",
                     "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/BetterTogether_600x.jpg?v=1654415990",
-                    "title":"cross cut chisel",
-                    "price":"200"
+                    "title":"bitter",
+                    "price":"1200"
         
                 },
                 {
                     "id":"21",
                     "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/ForMyForeverGiftTray_600x.png?v=1673931448",
-                    "title":"side cut chisel",
+                    "title":"extra bitter",
                     "price":"200"
         
                 },]
@@ -397,21 +397,21 @@ export const hammer=[
                     {
                         "id":"22",
                         "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/PrafeuilleChocoalteBerryCube_600x.jpg?v=1675680477",
-                        "title":"brick trowel",
+                        "title":"cadbury",
                         "price":"200"
         
                     },
                     {
                         "id":"23",
                         "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/PrafeuilleCaramel2_600x.jpg?v=1622179379",
-                        "title":"steel trowel",
+                        "title":"ferrero rocher",
                         "price":"200"
         
                     },
                     {
                         "id":"24",
                         "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/PopcornChocolate_600x.jpg?v=1676526817",
-                        "title":"hand trowel",
+                        "title":"mocha walnut",
                         "price":"200"
         
                     },]
@@ -419,7 +419,7 @@ export const hammer=[
                         {
                             "id":"25",
                         "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/PureCaramelMilkChocolate_600x.jpg?v=1622624498",
-                        "title":"Abrasive saw",
+                        "title":"gourmet truffles",
                         "price":"200"
         
 
@@ -427,7 +427,7 @@ export const hammer=[
                         {
                             "id":"26",
                         "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/BatonCookiesCoconut_600x.jpg?v=1674127017",
-                        "title":"Carbide saw",
+                        "title":"bournvilly",
                         "price":"200"
         
 
@@ -435,7 +435,7 @@ export const hammer=[
                         {
                             "id":"27",
                         "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/BatonCookiesHazelCacao_600x.jpg?v=1674127037",
-                        "title":"Concrete saw",
+                        "title":"premium sweets",
                         "price":"200"
         
 
@@ -444,7 +444,7 @@ export const hammer=[
                             {
                                 "id":"28",
                             "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/WaferTiramisu_600x.jpg?v=1674125246",
-                            "title":"Portable Drilling Machine",
+                            "title":"regalia",
                             "price":"200"
         
     
@@ -452,7 +452,7 @@ export const hammer=[
                             {
                                 "id":"29",
                             "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/ChocolateWafersHazel1_600x.jpg?v=1622177794",
-                            "title":"Radial Drilling Machine",
+                            "title":"chocolateberry",
                             "price":"200"
         
     
@@ -460,7 +460,7 @@ export const hammer=[
                             {
                                 "id":"30",
                             "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/WaferStrawberry_600x.jpg?v=1674129352",
-                            "title":"Gang Drilling Machine",
+                            "title":"redberry",
                             "price":"200"
         
     
@@ -469,7 +469,7 @@ export const hammer=[
                                 {
                                     "id":"31",
                                 "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/MacadamiaChocolate_600x.jpg?v=1676526901",
-                                "title":"Stainless Steel Wheelbarrow",
+                                "title":"Cadbury",
                                 "price":"200"
                                         
         
@@ -477,7 +477,7 @@ export const hammer=[
                                 {
                                     "id":"32",
                                 "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NuttyBarChocolate_600x.jpg?v=1676435175",
-                                "title":"Galvanized Steel Wheelbarrows",
+                                "title":"hersheys kisses",
                                 "price":"200"
         
         
@@ -485,7 +485,7 @@ export const hammer=[
                                 {
                                     "id":"33",
                                 "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/NamaMildWhiteChocolate_600x.jpg?v=1676549455",
-                                "title":" Powder Coated Steel Wheelbarrows",
+                                "title":"himani",
                                 "price":"200"
         
         
@@ -494,7 +494,7 @@ export const hammer=[
                                     {
                                         "id":"34",
                                     "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/CompanyforherCuppa_600x.jpg?v=1677064017",
-                                    "title":"Hack Saw",
+                                    "title":"chocoloony",
                                     "price":"200"
         
                                     
@@ -503,7 +503,7 @@ export const hammer=[
                                     {
                                         "id":"35",
                                     "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/PureLoveGiftBox_600x.png?v=1676525291",
-                                    "title":"Coping Saw",
+                                    "title":"choco charms",
                                     "price":"200"
         
         
@@ -512,7 +512,7 @@ export const hammer=[
                                     {
                                         "id":"36",
                                     "img":"https://cdn.shopify.com/s/files/1/0420/8669/5079/products/OneofaKind_600x.jpg?v=1654416240",
-                                    "title":"Crosscut Saw",
+                                    "title":"pental",
                                     "price":"200"
         
                                     
